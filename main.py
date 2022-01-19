@@ -18,8 +18,8 @@ with open('data.json', 'r') as file:
     data = json.load(file)
 
 # taking csv files as variables
-output_csv = "output1.csv"
-stargazers_count = "stargazers_count1.csv"
+output_csv = "output.csv"
+stargazers_count = "stargazers_count.csv"
 
 
 # Creating methods for writing the data to csv file
