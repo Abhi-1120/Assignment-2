@@ -4,7 +4,7 @@ import requests
 import csv
 
 
-def get_date():
+def get_data():
     # api_endpoint
     url = 'https://api.github.com/search/repositories?q=is:public+language:Python+forks:>=200'
     # sending get request and saving the response as data object
@@ -55,6 +55,6 @@ def write_csv(filename, csv_list, action='w'):
 
 
 # Calling Methods
-data = get_date()
+data = get_data()
 normal_list, stargazers_list = parse_data(data)
 write_data_to_csv_file(normal_list, stargazers_list)
